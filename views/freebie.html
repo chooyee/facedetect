@@ -425,6 +425,9 @@
         var bigface = faceImages.find(function(o){ return o.width == res; })
         console.log(bigface);
         $('#facesContainer').append(bigface);
+        $('html, body').animate({
+            scrollTop: $("#facesContainer").offset().top
+        }, 2000);
         //faceImages.map(displayImage);
         
     }
